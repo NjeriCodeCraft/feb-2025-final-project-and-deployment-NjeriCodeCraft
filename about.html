@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovelNest - Your Book Haven</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <a href="index.html" class="logo">  <!-- Added link here -->
+            <h1>Novel<span>Nest</span></h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>NovelNest was born from a shared passion for literature and the desire to create a welcoming space for book lovers. Founded in 2020 by a group of avid readers, our mission is to help you discover your next favorite book.</p>
+                    <p>We believe that every book has its reader and every reader has their book. Our team carefully curates recommendations across all genres to help you find stories that will stay with you long after you've turned the last page.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="number">500+</span>
+                            <span class="label">Books Reviewed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="number">25+</span>
+                            <span class="label">Genres Covered</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="number">10k+</span>
+                            <span class="label">Happy Readers</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="Images/emrah on X.jpeg" alt="Our team discussing books">
+                </div>
+            </div>
+
+            <div class="team-section">
+                <h2>Meet Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="Images/profile.jpeg" alt="Faith Njeri">
+                        <h3>Faith Njeri</h3>
+                        <p class="position">Founder & Chief Editor</p>
+                        <p class="bio">Faith has been reviewing books professionally for over 10 years and specializes in literary fiction.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="Images/Simpledp.jpeg" alt="Njeri Wanjiru">
+                        <h3>Njeri Wanjiru</h3>
+                        <p class="position">Content Director</p>
+                        <p class="bio">Njeri brings her expertise in science fiction and fantasy to our reviews and recommendations.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="Images/pp.jpeg" alt="Faith Wanjiru">
+                        <h3>Faith Wanjiru</h3>
+                        <p class="position">Community Manager</p>
+                        <p class="bio">Wanjiru connects with our readers and organizes our book club discussions and author events.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>About NovelNest</h3>
+                    <p>Your go-to destination for book reviews, recommendations, and literary discussions.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-goodreads"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 NovelNest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('nav ul');
+
+            hamburger.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+
+            document.querySelectorAll('nav ul li a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+        });
+    </script>
+    <script src="dark-mode.js"></script>
+</body>
+</html>
