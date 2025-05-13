@@ -1,7 +1,5 @@
 # NovelNest - Book Blog Website
 
-![NovelNest Screenshot](<img width="949" alt="The front" src="https://github.com/user-attachments/assets/a36315e6-f727-42dd-8143-5ced007a1e5b" />) 
-
 NovelNest is a responsive book blog website where users can explore book categories, read reviews, and interact with content through likes/dislikes.
 
 ## Features
@@ -11,7 +9,7 @@ NovelNest is a responsive book blog website where users can explore book categor
 - 📱 **Responsive Design**: Works on all device sizes
 - 🎨 **Modern UI**: Clean, book-themed interface with smooth animations
 - 🌓 **Dark Mode**: Toggle between light and dark themes
-e
+
 ## Technologies Used
 
 - **Frontend**:
