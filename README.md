@@ -24,7 +24,7 @@ e
 
 ## Live Demo
 
-Check out the live version: [NovelNest Live Demo]
+Check out the live version: [NovelNest Live Demo] (https://novelnestbooksite.netlify.app/)
 
 ## Installation
 
